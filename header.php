@@ -15,3 +15,16 @@
 
 </head>
 <body >
+<header>
+<!--  top bar -->
+<div class="topbar">
+
+</div>
+<!--  top bar -->
+
+<!--  Logo and Navigation Bar -->
+<div class="mainMenu">
+
+</div>
+<!--  Logo and Navigation Bar -->
+</header>
