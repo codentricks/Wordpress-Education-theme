@@ -26,7 +26,7 @@
    <div class="col-md-4">
    <div class="logo">
     <?php if ( get_theme_mod( 'site_logo' ) ) : ?>
-        <a href="<?php echo site_url();?>"><img src="<?php echo get_theme_mod( 'site_logo' );?>" alt="Logo"/></a>
+      <a href="<?php echo site_url();?>"><img src="<?php echo get_theme_mod( 'site_logo' );?>" alt="Logo"/></a>
     <?php endif;?>
     </div>
    </div>
