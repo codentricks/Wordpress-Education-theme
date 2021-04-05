@@ -1,0 +1,4 @@
+{
+  "name": "Wordpress_Education_Theme"
+, "files": [ { "directory": "./", "filters": ["*.php", "*.css","*.js"], "recursive": 1 } ]
+} 
