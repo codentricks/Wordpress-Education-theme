@@ -20,5 +20,5 @@ define( 'SPWET_THEME_URI', trailingslashit( esc_url( get_template_directory_uri(
 
 // includes file
 require_once SPWET_THEME_DIR . 'core/loadfiles.php';
-require_once SPWET_THEME_DIR . 'core/options.php';
+require_once SPWET_THEME_DIR . 'core/option.php';
 require_once SPWET_THEME_DIR . 'templates/customizer/default.php';

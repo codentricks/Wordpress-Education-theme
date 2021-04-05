@@ -1,26 +1,49 @@
 <?php
+// Site Logo using Cutomizer
+add_action( 'customize_register', 'sp_customize_register' );
+function sp_customize_register( $wp_customize ) {
+
+    $wp_customize->add_section( 'sp_logo' , array(
+        'title' => __( 'Site Logo', 'sp' ),
+        'description' => 'Modify the site logo image',
+        'priority'=> 99,
+    ));
+    $wp_customize->add_setting( 'site_logo' , array(
+      'default' => ''
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control(
+        $wp_customize,
+        'site_logo',
+        array(
+        'label' => __( 'Upload Site Logo', 'sp' ),
+        'section' => 'sp_logo',
+        'settings' => 'site_logo'
+        )
+    ));
+}
 //customizing homepage
 add_action('customize_register','theme_customize_homepg');
 function theme_customize_homepg($wp_customize){
-	$wp_customize->add_panel('sp_homepage',array(
-	    'title'=>'Homepage',
-	    'description'=> 'Update Homepage',
+	$wp_customize->add_panel('sp_default',array(
+	    'title'=>'Default Settings',
+	    'description'=> 'Default Settings',
 	    'priority'=> 100,
     ));
     //  Company Name
 	    $wp_customize->add_section('sp_company_section',array(
 	     'title'=>'Company',
 	     'description'=>__('Update Company Details'),
-	     'panel'=>'sp_homepage',
+	     'panel'=>'sp_default',
 	   ));
 	   $wp_customize->add_setting('sp_company_name',array(
-	        'default'=>_('ThinkinTank '),
+	        'default'=>_('Company Name '),
 	   ));
 	   $wp_customize->add_control('sp_company_name',array(
 	        'label'=>'Company',
 	        'section'=>__('sp_company_section'),
 	        'priority'=>1,
 	    ));
+	    
 	// Video 
 	    $wp_customize->add_section('sp_video_section',array(
 	    	'title'=>'Video',

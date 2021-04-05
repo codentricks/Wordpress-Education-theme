@@ -12,3 +12,43 @@ License: GNU General Public License v3 or later
 License URI: LICENSE
 Text Domain: sp-worpdress-education-theme
 */
+
+body {
+  /*padding-top: 3.5rem;*/
+}
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
+
+@media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+}
+
+/* bootstrap fixes */
+.form-control {
+    border-radius: 0rem !important;
+}
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.topbar{
+    height:40px;
+    background: #121921;
+    width: 100%;
+    z-index: 10000;
+    
+}
+#logoSection{
+ background:#ffffff;
+ padding:5px 0px 5px 0px;
+}
